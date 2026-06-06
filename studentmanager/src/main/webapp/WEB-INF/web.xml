@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="jakarta.ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+   
+    <servlet>
+        <servlet-name>ListStudentServlet</servlet-name>
+        <servlet-class>control.ListStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListStudentServlet</servlet-name>
+        <url-pattern>/ListStudentServlet.do</url-pattern>
+    </servlet-mapping>
+
+    <!--新增-->
+    <servlet>
+        <servlet-name>Insertservlet</servlet-name>
+        <servlet-class>control.Insertservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Insertservlet</servlet-name>
+        <url-pattern>/Insertservlet.do</url-pattern>
+    </servlet-mapping>
+
+    <!--删除-->
+    <servlet>
+        <servlet-name>Deleteservlet</servlet-name>
+        <servlet-class>control.Deleteservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Deleteservlet</servlet-name>
+        <url-pattern>/Deleteservlet.do</url-pattern>
+    </servlet-mapping>
+
+    <!--跳转修改页-->
+    <servlet>
+        <servlet-name>Updateservlet</servlet-name>
+        <servlet-class>control.Updateservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Updateservlet</servlet-name>
+        <url-pattern>/Updateservlet.do</url-pattern>
+    </servlet-mapping>
+
+    <!--执行修改-->
+    <servlet>
+        <servlet-name>DoUpdateservlet</servlet-name>
+        <servlet-class>control.DoUpdateservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoUpdateservlet</servlet-name>
+        <url-pattern>/DoUpdateservlet.do</url-pattern>
+    </servlet-mapping>
+
+    <!--详情-->
+    <servlet>
+        <servlet-name>ShowStudentServlet</servlet-name>
+        <servlet-class>control.ShowStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowStudentServlet</servlet-name>
+        <url-pattern>/ShowStudentServlet.do</url-pattern>
+    </servlet-mapping>
+   <!-- 批量导入学生Servlet -->
+<servlet>
+    <servlet-name>ImportStudentServlet</servlet-name>
+    <servlet-class>control.ImportStudentServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ImportStudentServlet</servlet-name>
+    <url-pattern>/ImportStudentServlet.do</url-pattern>
+</servlet-mapping>
+</web-app>
